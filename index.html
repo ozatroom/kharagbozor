@@ -109,9 +109,62 @@ form input::placeholder,form textarea::placeholder{color:#84978a}
  #products.grid>.card .buy{font-size:13px}
  #products.grid>.card .buy button{width:32px;height:32px}
 }
+
+/* Light theme */
+body[data-theme="light"]{--bg:#f5f5f0;--ink:#202820;--green:#315b4c;--muted:#788078;--line:#e1e5dc;background:#f5f5f0;color:#202820}
+body[data-theme="light"] header{background:rgba(248,249,244,.92);border-color:#e1e5dc}
+body[data-theme="light"] .brand{color:#202820}
+body[data-theme="light"] .brand i{background:#315b4c;color:#fff}
+body[data-theme="light"] .nav button{border-color:#d9dfd5;color:#26372e;background:#fff}
+body[data-theme="light"] .nav .cart,body[data-theme="light"] .cta,body[data-theme="light"] .submit{background:#315b4c;color:#fff}
+body[data-theme="light"] .hero h1,body[data-theme="light"] .head h2,body[data-theme="light"] .category-heading h2,body[data-theme="light"] .about h2{color:#202820}
+body[data-theme="light"] .hero p{color:#68756c}
+body[data-theme="light"] .eyebrow{color:#315b4c}
+body[data-theme="light"] .hero img{filter:none}
+body[data-theme="light"] .perk{background:#e9ece5;border:1px solid #e0e5dc;color:#26372e}
+body[data-theme="light"] .perk span{color:#68756c}
+body[data-theme="light"] .search{background:#fff;color:#202820;border-color:#d9dfd5}
+body[data-theme="light"] .search::placeholder{color:#89938b}
+body[data-theme="light"] .filter{color:#34463b;border-color:#d3dbd1;background:#fff}
+body[data-theme="light"] .filter.active{background:#315b4c;color:#fff;border-color:#315b4c}
+body[data-theme="light"] .card{background:#fff;border-color:#e0e5dc}
+body[data-theme="light"] .card img{filter:none;background:#f0f1ec}
+body[data-theme="light"] .info h3,body[data-theme="light"] .buy,body[data-theme="light"] .price-main{color:#202820}
+body[data-theme="light"] .info p{color:#788078}
+body[data-theme="light"] .buy button{background:#315b4c;color:#fff}
+body[data-theme="light"] .cardqty{background:#315b4c;color:#fff}
+body[data-theme="light"] .cardqty button{background:#244538;color:#fff}
+body[data-theme="light"] .tierbox{background:#f5f7f2;border-color:#dce3d9;color:#647168}
+body[data-theme="light"] .tierbox b{color:#315b4c}
+body[data-theme="light"] .tierbox .active-tier{color:#202820}
+body[data-theme="light"] .price-caption{color:#788078}
+body[data-theme="light"] .about{background:linear-gradient(125deg,#e9eee7,#f4f5ef);border-color:#e0e5dc;color:#68756c}
+body[data-theme="light"] .footer{border-color:#e1e5dc;color:#788078}
+body[data-theme="light"] .drawer{background:#f7f8f3;color:#202820}
+body[data-theme="light"] .drawerhead button{background:#e7ece5;color:#202820}
+body[data-theme="light"] .lineitem{background:#fff;color:#202820}
+body[data-theme="light"] .qty button{background:#315b4c;color:#fff}
+body[data-theme="light"] .total{border-color:#dce3d9}
+body[data-theme="light"] form input,body[data-theme="light"] form textarea{background:#fff;color:#202820;border-color:#d9dfd5}
+body[data-theme="light"] form input::placeholder,body[data-theme="light"] form textarea::placeholder{color:#89938b}
+body[data-theme="light"] form label,body[data-theme="light"] .note{color:#788078}
+body[data-theme="light"] .seller-btn{background:#fff!important;color:#315b4c!important;border-color:#b8c9ba!important}
+body[data-theme="light"] .modalbox{background:#f7f8f3;color:#202820;border-color:#d9dfd5}
+body[data-theme="light"] .modalbox .closemodal{background:#e7ece5;color:#202820}
+body[data-theme="light"] .modalbox label{color:#68756c}
+body[data-theme="light"] .modalbox input,body[data-theme="light"] .modalbox textarea,body[data-theme="light"] .modalbox select{background:#fff;color:#202820;border-color:#d9dfd5}
+body[data-theme="light"] .pendingrow{background:#fff;border-color:#d9dfd5}
+body[data-theme="light"] .category-heading p{color:#788078}
+body[data-theme="light"] .category-tile{background:linear-gradient(135deg,#fff,#edf2ea);color:#26372e;border-color:#dce3d9}
+body[data-theme="light"] .category-tile:before{opacity:.35}
+body[data-theme="light"] .category-tile:after{border-color:#315b4c20}
+body[data-theme="light"] .category-tile.active{background:linear-gradient(135deg,#e5efdf,#f4f7f0);border-color:#7eaa68;box-shadow:inset 0 0 0 1px #7eaa6840}
+body[data-theme="light"] .category-arrow{color:#315b4c}
+body[data-theme="light"] .shade{background:#0006}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
-<body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
+<body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
 <main class="wrap">
 <section class="hero"><div><div class="eyebrow" data-ru="ОНЛАЙН-МАГАЗИН · ХОРУҒ" data-tj="МАГОЗИНИ ОНЛАЙН · ХОРУҒ">ОНЛАЙН-МАГАЗИН · ХОРУҒ</div><h1 data-ru="Всё нужное.<br>В одном месте." data-tj="Ҳама чизи зарурӣ.<br>Дар як ҷо.">Всё нужное.<br>В одном месте.</h1><p data-ru="Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Хорогу." data-tj="Молҳоро онлайн интихоб кунед, фармоиш диҳед ва харидро дар Хоруғ бо расонидани қулай гиред.">Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Хорогу.</p><a class="cta" href="#catalog" data-ru="Перейти к покупкам ↗" data-tj="Ба харид гузаред ↗">Перейти к покупкам ↗</a></div><img src="assets/Grocery_products_arranged_for_ad…_ef696163_2K.jpg" alt="Ассортимент продуктов и товаров KHARAGBOZOR"></section>
 <section class="perks"><div class="perk"><b data-ru="Удобный заказ" data-tj="Фармоиши қулай">Удобный заказ</b><span data-ru="Покупки в несколько нажатий" data-tj="Харид бо чанд пахш">Покупки в несколько нажатий</span></div><div class="perk"><b data-ru="Доставка по Хорогу" data-tj="Расонидан дар Хоруғ">Доставка по Хорогу</b><span data-ru="Согласуем удобное время" data-tj="Вақти мувофиқро мувофиқа мекунем">Согласуем удобное время</span></div><div class="perk"><b data-ru="Поддержка клиентов" data-tj="Дастгирии муштариён">Поддержка клиентов</b><span data-ru="Поможем с выбором и заказом" data-tj="Дар интихоб ва фармоиш кӯмак мекунем">Поможем с выбором и заказом</span></div></section>
@@ -198,5 +251,6 @@ function approveProduct(id){const item=pendingProducts.find(x=>x.id===id);if(!it
 function rejectProduct(id){pendingProducts=pendingProducts.filter(x=>x.id!==id);saveSellerData();renderModeration()}
 function loadApprovedProducts(){sellerProducts.forEach(x=>products.push(sellerProductToCatalog(x)))}
 
+const themeToggle=document.getElementById("themeToggle");function setTheme(theme){document.body.dataset.theme=theme;themeToggle.textContent=theme==="dark"?"☀️ Светлая":"🌙 Тёмная";themeToggle.setAttribute("aria-label",theme==="dark"?"Включить светлую тему":"Включить тёмную тему");document.querySelector('meta[name="theme-color"]')?.setAttribute("content",theme==="dark"?"#07140f":"#f5f5f0");try{localStorage.setItem("kharagbozor-theme",theme)}catch(e){}}let savedTheme="dark";try{savedTheme=localStorage.getItem("kharagbozor-theme")||"dark"}catch(e){}setTheme(savedTheme);themeToggle.onclick=()=>setTheme(document.body.dataset.theme==="dark"?"light":"dark");
 document.getElementById("language").onclick=()=>{lang=lang==="ru"?"tj":"ru";render()};document.getElementById("search").oninput=render;document.getElementById("showcart").onclick=()=>document.getElementById("shade").classList.add("open");document.getElementById("hidecart").onclick=()=>document.getElementById("shade").classList.remove("open");document.getElementById("shade").onclick=e=>{if(e.target.id==="shade")e.target.classList.remove("open")};document.getElementById("order").onsubmit=e=>{e.preventDefault();if(!Object.keys(cart).length){alert(names[lang].emptycart);return}const order={customer:Object.fromEntries(new FormData(e.target)),items:Object.entries(cart).map(([i,n])=>({product:products[i][0],quantity:n,unitPrice:unitPrice(products[i][4],n,products[i][7]),lineTotal:unitPrice(products[i][4],n,products[i][7])*n,tier:tierLabel(n)})),total:Object.entries(cart).reduce((s,[i,n])=>s+unitPrice(products[i][4],n,products[i][7])*n,0),currency:"TJS"};console.log("KHARAGBOZOR demo order",order);alert(names[lang].sent)};loadApprovedProducts();render();
 </script></body></html>
