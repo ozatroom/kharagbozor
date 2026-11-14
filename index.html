@@ -162,6 +162,45 @@ body[data-theme="light"] .category-tile.active{background:linear-gradient(135deg
 body[data-theme="light"] .category-arrow{color:#315b4c}
 body[data-theme="light"] .shade{background:#0006}
 
+
+/* Definitive proportional product cards: fill each grid track */
+#products.grid{
+ display:grid!important;
+ grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))!important;
+ justify-content:stretch!important;
+ align-content:start!important;
+ justify-items:stretch!important;
+ align-items:stretch!important;
+ gap:18px!important;
+ width:100%!important;
+}
+#products.grid>.card{
+ display:flex!important;
+ flex-direction:column!important;
+ width:100%!important;
+ max-width:none!important;
+ min-width:0!important;
+ margin:0!important;
+ justify-self:stretch!important;
+ grid-column:auto!important;
+}
+#products.grid>.card>img{
+ display:block!important;
+ width:100%!important;
+ max-width:none!important;
+ height:auto!important;
+ aspect-ratio:4/3!important;
+ object-fit:cover!important;
+}
+#products.grid>.card>.info{width:100%;min-width:0;box-sizing:border-box;flex:1}
+@media(max-width:620px){
+ #products.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+ #products.grid>.card>img{aspect-ratio:1/1!important}
+}
+@media(max-width:360px){
+ #products.grid{grid-template-columns:minmax(0,1fr)!important}
+}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
