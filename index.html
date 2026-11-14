@@ -382,9 +382,41 @@ form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;li
  header #showcart.cart{min-height:44px!important;height:44px!important;padding:0 18px!important}
 }
 
+
+/* KHARAGBOZOR account access */
+.auth-open{border:1px solid #a6d66c88!important;border-radius:24px!important;padding:10px 16px!important;color:#a6d66c!important;background:#10231a!important;font-weight:700}
+.auth-overlay{display:none;position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.68);padding:22px;overflow:auto;align-items:center;justify-content:center}
+.auth-overlay.open{display:flex}
+.auth-panel{position:relative;width:min(720px,100%);background:#fff;color:#17251d;border-radius:22px;padding:30px;box-shadow:0 24px 80px #0005}
+.auth-close{position:absolute;right:18px;top:14px;border:0;background:#f0f2ef;border-radius:50%;width:38px;height:38px;font-size:25px;color:#26352c}
+.auth-brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px;margin-bottom:26px;color:#183224}
+.auth-brand i{font-style:normal;background:#a6d66c;color:#102018;border-radius:12px;padding:12px 15px}
+.auth-panel h2{font-size:29px;margin:0 0 8px;letter-spacing:-.7px}
+.auth-subtitle{color:#738078;margin:0 0 22px}
+.auth-card{background:#fff;border-radius:16px;padding:22px 0 0;margin:0}
+.auth-card label{display:block;color:#26352c;font-size:13px;font-weight:700;margin-bottom:8px}
+.auth-card input,.auth-code-card input{display:block;width:100%;min-width:0;height:48px;padding:0 14px;border:0;border-radius:12px;background:#f3f5f3;color:#17251d;font-size:16px;box-sizing:border-box}
+.phone-row{display:flex;gap:8px}
+.phone-prefix{display:flex;align-items:center;padding:0 14px;border-radius:12px;background:#f3f5f3;font-weight:700}
+.phone-row input{flex:1}
+.auth-card small{display:block;color:#78847c;font-size:12px;line-height:1.5;margin:10px 0 12px}
+.auth-submit{width:100%;min-height:46px;border:0;border-radius:12px;background:#548d3d;color:white;font-weight:700;font-size:14px;padding:12px}
+.auth-divider{display:flex;align-items:center;gap:12px;color:#78847c;font-size:12px;margin:22px 0 0}
+.auth-divider:before,.auth-divider:after{content:"";height:1px;background:#e0e5df;flex:1}
+.auth-code-card{padding-top:18px}
+.auth-code-card h3{margin:0 0 8px}
+.auth-code-card p{color:#78847c;font-size:13px}
+.auth-code-card input{margin:12px 0;letter-spacing:8px;text-align:center;font-size:22px}
+.auth-back,.auth-register button{border:0;background:none;color:#548d3d;text-decoration:underline;padding:10px 0}
+.auth-status{min-height:18px;font-size:13px;color:#a34b36;margin:10px 0}
+.auth-register{text-align:center;color:#78847c;font-size:13px;margin:12px 0}
+.auth-register button{font-weight:700;text-decoration:none}
+.auth-legal{text-align:center;color:#9aa39c;font-size:11px;margin:16px 0 0}
+@media(max-width:760px){.auth-overlay{padding:0;align-items:flex-end}.auth-panel{width:100%;max-height:94dvh;overflow:auto;border-radius:22px 22px 0 0;padding:24px 20px calc(20px + env(safe-area-inset-bottom))}.auth-brand{margin-bottom:20px}.auth-panel h2{font-size:25px}.auth-open{padding:9px 12px!important;font-size:12px}}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
-<body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
+<body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="auth-open" id="authOpen" type="button">Войти</button><button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
 <main class="wrap">
 <section class="hero"><div><div class="eyebrow" data-ru="ОНЛАЙН-МАГАЗИН · ХОРУҒ" data-tj="МАГОЗИНИ ОНЛАЙН · ХОРУҒ">ОНЛАЙН-МАГАЗИН · ХОРУҒ</div><h1 data-ru="Всё нужное.<br>В одном месте." data-tj="Ҳама чизи зарурӣ.<br>Дар як ҷо.">Всё нужное.<br>В одном месте.</h1><p data-ru="Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Хорогу." data-tj="Молҳоро онлайн интихоб кунед, фармоиш диҳед ва харидро дар Хоруғ бо расонидани қулай гиред.">Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Хорогу.</p><a class="cta" href="#catalog" data-ru="Перейти к покупкам ↗" data-tj="Ба харид гузаред ↗">Перейти к покупкам ↗</a></div><img src="assets/Grocery_products_arranged_for_ad…_ef696163_2K.jpg" alt="Ассортимент продуктов и товаров KHARAGBOZOR"></section>
 <section class="perks"><div class="perk"><b data-ru="Удобный заказ" data-tj="Фармоиши қулай">Удобный заказ</b><span data-ru="Покупки в несколько нажатий" data-tj="Харид бо чанд пахш">Покупки в несколько нажатий</span></div><div class="perk"><b data-ru="Доставка по Хорогу" data-tj="Расонидан дар Хоруғ">Доставка по Хорогу</b><span data-ru="Согласуем удобное время" data-tj="Вақти мувофиқро мувофиқа мекунем">Согласуем удобное время</span></div><div class="perk"><b data-ru="Поддержка клиентов" data-tj="Дастгирии муштариён">Поддержка клиентов</b><span data-ru="Поможем с выбором и заказом" data-tj="Дар интихоб ва фармоиш кӯмак мекунем">Поможем с выбором и заказом</span></div></section>
@@ -417,7 +449,36 @@ form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;li
 <button class="submit" type="submit">Отправить на проверку</button></form></section></div>
 <div class="modalshade" id="moderationShade"><section class="modalbox"><button class="closemodal" id="moderationClose">✕</button><div class="eyebrow">KHARAGBOZOR · ADMIN</div><h2>Заявки на проверку</h2><p class="note">Введите секретный ключ администратора.</p><label>Ключ администратора<input id="adminTokenInput" type="password" autocomplete="current-password" placeholder="ADMIN_TOKEN"></label><button class="submit" type="button" id="adminLogin">Войти в модерацию</button><div id="pendingList"></div></section></div>
 
-<div class="shade" id="shade"><aside class="drawer"><div class="drawerhead"><h2 data-ru="Ваша корзина" data-tj="Сабади шумо">Ваша корзина</h2><button id="hidecart">✕</button></div><div id="items"></div><div class="total"><span data-ru="Итого" data-tj="Ҳамагӣ">Итого</span><span id="sum">0 сомони</span></div><form id="order"><label data-ru="Ваше имя" data-tj="Номи шумо">Ваше имя<input required name="name"></label><label data-ru="Номер телефона" data-tj="Рақами телефон">Номер телефона<input required name="phone" type="tel" placeholder="+992"></label><label data-ru="Адрес доставки" data-tj="Суроғаи расонидан">Адрес доставки<input required name="address"></label><label data-ru="Комментарий" data-tj="Шарҳ">Комментарий<textarea name="comment"></textarea></label><button class="submit" type="submit" data-ru="Подготовить заказ" data-tj="Омода кардани фармоиш">Подготовить заказ</button></form><p class="note" data-ru="Демонстрационная версия: отправка заказов, Telegram и онлайн-оплата будут подключены следующим этапом." data-tj="Нусхаи намоишӣ: фиристодани фармоишҳо, Telegram ва пардохти онлайн марҳилаи оянда пайваст мешаванд.">Демонстрационная версия: отправка заказов, Telegram и онлайн-оплата будут подключены следующим этапом.</p></aside></div>
+
+<div class="auth-overlay" id="authOverlay" aria-hidden="true">
+ <section class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <button class="auth-close" id="authClose" type="button" aria-label="Закрыть">×</button>
+  <div class="auth-brand"><i>K</i><span>KHARAGBOZOR</span></div>
+  <h2 id="authTitle">Вход в аккаунт</h2>
+  <p class="auth-subtitle">Телефон и пароль, затем код по SMS.</p>
+  <form id="phoneAuthForm" class="auth-card">
+   <label>Телефон</label>
+   <div class="phone-row"><span class="phone-prefix">+992</span><input id="authPhone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67" required></div>
+   <small>Укажите номер и нажмите «Получить код» — код придёт по SMS.</small>
+   <button class="auth-submit" type="submit">Получить код по SMS</button>
+  </form>
+  <div class="auth-divider"><span>ИЛИ</span></div>
+  <form id="emailAuthForm" class="auth-card">
+   <input id="authEmail" type="email" autocomplete="email" placeholder="name@gmail.com" required>
+   <small>Мы отправим 6-значный код на эту почту.</small>
+   <button class="auth-submit" type="submit">Получить код</button>
+  </form>
+  <div class="auth-code-card" id="authCodeCard" hidden>
+   <h3>Подтверждение</h3><p id="authCodeHint">Введите шестизначный код.</p>
+   <input id="authCode" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000">
+   <button class="auth-submit" id="authVerify" type="button">Подтвердить код</button>
+   <button class="auth-back" id="authBack" type="button">Изменить номер или email</button>
+  </div>
+  <p class="auth-status" id="authStatus" role="status" aria-live="polite"></p>
+  <p class="auth-register">Нет аккаунта? <button id="authRegister" type="button">Зарегистрироваться</button></p>
+  <p class="auth-legal">Продолжая, вы соглашаетесь с условиями использования KHARAGBOZOR.</p>
+ </section>
+</div><div class="shade" id="shade"><aside class="drawer"><div class="drawerhead"><h2 data-ru="Ваша корзина" data-tj="Сабади шумо">Ваша корзина</h2><button id="hidecart">✕</button></div><div id="items"></div><div class="total"><span data-ru="Итого" data-tj="Ҳамагӣ">Итого</span><span id="sum">0 сомони</span></div><form id="order"><label data-ru="Ваше имя" data-tj="Номи шумо">Ваше имя<input required name="name"></label><label data-ru="Номер телефона" data-tj="Рақами телефон">Номер телефона<input required name="phone" type="tel" placeholder="+992"></label><label data-ru="Адрес доставки" data-tj="Суроғаи расонидан">Адрес доставки<input required name="address"></label><label data-ru="Комментарий" data-tj="Шарҳ">Комментарий<textarea name="comment"></textarea></label><button class="submit" type="submit" data-ru="Подготовить заказ" data-tj="Омода кардани фармоиш">Подготовить заказ</button></form><p class="note" data-ru="Демонстрационная версия: отправка заказов, Telegram и онлайн-оплата будут подключены следующим этапом." data-tj="Нусхаи намоишӣ: фиристодани фармоишҳо, Telegram ва пардохти онлайн марҳилаи оянда пайваст мешаванд.">Демонстрационная версия: отправка заказов, Telegram и онлайн-оплата будут подключены следующим этапом.</p></aside></div>
 <script>
 let products=[["Керамическая ваза","Гулдони сафолӣ","Декор для дома","Ороиши хона",85,"home","https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&q=80"],["Беспроводные наушники","Гӯшмонакҳои бесим","Комфортный звук каждый день","Садои бароҳат барои ҳар рӯз",240,"tech","https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"],["Настольный светильник","Чароғи рӯимизӣ","Мягкий свет и уют","Нури мулоим ва фазои бароҳат",120,"home","https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80"],["Минималистичные часы","Соати минималистӣ","Лаконичный дизайн","Тарҳи сода",190,"style","https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"],["Повседневная сумка","Халтаи ҳаррӯза","Практичный стиль","Услуби амалӣ",75,"style","https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"],["Компактная камера","Камераи паймон","Ловите важные моменты","Лаҳзаҳои муҳимро сабт кунед",320,"tech","https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=700&q=80"],["Ароматическая свеча","Шамъи хушбӯй","Тёплая атмосфера дома","Фазои гарми хона",55,"home","https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80"],["Портативная колонка","Баландгӯяки сайёр","Музыка всегда с вами","Мусиқӣ ҳамеша бо шумост",145,"tech","https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=80"]];
 
@@ -455,6 +516,21 @@ const tierHtml=(base,qty)=>'<div class="tierbox"><b>'+names[lang].tierTitle+'</b
 function render(){document.querySelectorAll("[data-ru]").forEach(el=>el.innerHTML=el.dataset[lang]);document.documentElement.lang=lang;document.getElementById("language").textContent=lang==="ru"?"РУ / TJ":"TJ / РУ";document.getElementById("filters").innerHTML=["all",...categories.map(x=>x.id)].map(c=>'<button class="filter '+(cat===c?"active":"")+'" data-c="'+c+'">'+(c==="all"?names[lang].all:categories.find(x=>x.id===c).name)+'</button>').join("");document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{cat=b.dataset.c;render()});renderCategories();const q=document.getElementById("search").value.toLowerCase(),list=products.map((p,i)=>({p,i})).filter(({p})=>(cat==="all"||p[5]===cat)&&p[lang==="ru"?0:1].toLowerCase().includes(q));document.getElementById("products").innerHTML=list.length?list.map(({p,i})=>'<article class="card"><img loading="lazy" src="'+p[6]+'" alt="'+p[0]+'"><div class="info"><h3>'+p[lang==="ru"?0:1]+'</h3><p>'+p[lang==="ru"?2:3]+'</p><div class="buy"><span class="price-main">'+money(unitPrice(p[4],cart[i]||1,p[7]))+'<small class="price-caption"> / шт.</small></span>'+cardAction(i)+'</div>'+(p[7]&&p[7].custom?'<small class="price-caption">Продавец: '+p[7].seller+'</small>':tierHtml(p[4],cart[i]||0))+'</div></article>').join(''):names[lang].empty;renderCart()}
 function cardAction(i){const n=cart[i]||0;return n?'<div class="cardqty"><button aria-label="Уменьшить количество" onclick="change('+i+',-1)">−</button><span>'+n+'</span><button aria-label="Добавить ещё" onclick="add('+i+')">+</button></div>':'<button aria-label="Добавить в корзину" onclick="add('+i+')">+</button>'}
 function add(i){cart[i]=(cart[i]||0)+1;render()}function change(i,n){cart[i]+=n;if(cart[i]<=0)delete cart[i];render()}function renderCart(){const entries=Object.entries(cart),count=entries.reduce((s,[i,n])=>s+n,0),sum=entries.reduce((s,[i,n])=>s+unitPrice(products[i][4],n,products[i][7])*n,0);document.getElementById("count").textContent=count;document.getElementById("sum").textContent=money(sum);document.getElementById("items").innerHTML=entries.length?entries.map(([i,n])=>'<div class="lineitem"><span>'+products[i][lang==="ru"?0:1]+'<br>'+money(unitPrice(products[i][4],n,products[i][7]))+' / шт.<br>Сумма: '+money(unitPrice(products[i][4],n,products[i][7])*n)+'</span><span class="qty"><button onclick="change('+i+',-1)">−</button> '+n+' <button onclick="change('+i+',1)">+</button></span></div>').join():names[lang].emptycart}
+
+
+const authOverlay=document.getElementById("authOverlay"),authStatus=document.getElementById("authStatus");
+let authChannel="",authDestination="",authIsRegister=false;
+function openAuth(){authOverlay.classList.add("open");authOverlay.setAttribute("aria-hidden","false");authStatus.textContent="";document.body.style.overflow="hidden"}
+function closeAuth(){authOverlay.classList.remove("open");authOverlay.setAttribute("aria-hidden","true");document.body.style.overflow=""}
+document.getElementById("authOpen").onclick=openAuth;
+document.getElementById("authClose").onclick=closeAuth;
+authOverlay.addEventListener("click",e=>{if(e.target===authOverlay)closeAuth()});
+document.getElementById("authRegister").onclick=()=>{authIsRegister=!authIsRegister;document.getElementById("authTitle").textContent=authIsRegister?"Создание аккаунта":"Вход в аккаунт";document.getElementById("authRegister").textContent=authIsRegister?"Уже есть аккаунт? Войти":"Зарегистрироваться";authStatus.textContent=authIsRegister?"Введите телефон или email для регистрации.":" "};
+async function requestAuthCode(channel,destination){authChannel=channel;authDestination=destination;authStatus.textContent="Проверяем подключение отправки кода…";try{const r=await fetch("/api/auth/request-code",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({channel,destination,register:authIsRegister})});const d=await r.json();if(!r.ok)throw new Error(d.error||"Не удалось отправить код");document.getElementById("authCodeCard").hidden=false;document.getElementById("phoneAuthForm").hidden=true;document.getElementById("emailAuthForm").hidden=true;document.getElementById("authCodeHint").textContent="Код отправлен на "+destination;authStatus.textContent=""}catch(e){authStatus.textContent=e.message==="Failed to fetch"?"Отправка SMS и email-кодов ещё не подключена. Нужно настроить сервис авторизации.":e.message}}
+document.getElementById("phoneAuthForm").onsubmit=e=>{e.preventDefault();const n=document.getElementById("authPhone").value.replace(/\\D/g,"");if(n.length!==9){authStatus.textContent="Введите 9 цифр номера после +992.";return}requestAuthCode("sms","+992"+n)};
+document.getElementById("emailAuthForm").onsubmit=e=>{e.preventDefault();requestAuthCode("email",document.getElementById("authEmail").value.trim())};
+document.getElementById("authVerify").onclick=async()=>{const code=document.getElementById("authCode").value.trim();if(!/^\\d{6}$/.test(code)){authStatus.textContent="Введите шестизначный код.";return}try{const r=await fetch("/api/auth/verify-code",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({channel:authChannel,destination:authDestination,code})});const d=await r.json();if(!r.ok)throw new Error(d.error||"Неверный код");authStatus.textContent="Вы вошли в аккаунт.";localStorage.setItem("kharagbozor-session",JSON.stringify(d.session));setTimeout(closeAuth,800)}catch(e){authStatus.textContent=e.message==="Failed to fetch"?"Проверка кода станет доступна после подключения сервиса авторизации.":e.message}};
+document.getElementById("authBack").onclick=()=>{document.getElementById("authCodeCard").hidden=true;document.getElementById("phoneAuthForm").hidden=false;document.getElementById("emailAuthForm").hidden=false;authStatus.textContent=""};
 
 document.getElementById("sellerOpen").onclick=()=>openModal("sellerShade");
 document.getElementById("sellerClose").onclick=()=>closeModal("sellerShade");
