@@ -11,10 +11,52 @@ button{cursor:pointer}.nav button,.filter{border:1px solid var(--line);backgroun
 .perks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:60px}.perk{background:#e9ece5;padding:17px;border-radius:15px;font-size:13px}.perk b{display:block;margin-bottom:5px}.head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.head h2{font-size:30px;margin:8px 0}.search{border:1px solid var(--line);background:white;border-radius:30px;padding:12px 15px;min-width:210px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter.active{background:var(--green);color:white}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:white;border-radius:17px;overflow:hidden}.card img{width:100%;height:190px;object-fit:cover}.info{padding:14px}.info h3{font-size:15px;margin:0 0 7px}.info p{font-size:12px;color:var(--muted);min-height:30px}.buy{display:flex;justify-content:space-between;align-items:center;font-weight:bold}.buy button{border:0;border-radius:50%;width:34px;height:34px;background:#e8eee9;color:var(--green);font-size:21px}.about{margin:70px 0;background:#e8ede7;border-radius:24px;padding:30px;line-height:1.7}.about h2{font-size:28px}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}
 .shade{display:none;position:fixed;inset:0;background:#0008;z-index:5;justify-content:flex-end}.shade.open{display:flex}.drawer{background:var(--bg);width:min(430px,100%);height:100%;overflow:auto;padding:24px}.drawerhead{display:flex;justify-content:space-between;align-items:center}.drawerhead button{border:0;border-radius:50%;padding:10px}.lineitem{background:white;padding:13px;border-radius:12px;margin:9px 0;display:flex;justify-content:space-between;gap:10px}.qty button{border:0;border-radius:50%;padding:5px 10px;background:#e8eee9}.total{font-weight:bold;display:flex;justify-content:space-between;padding:18px 0;border-top:1px solid var(--line)}form input,form textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:5px 0 12px}form label{font-size:12px;color:var(--muted)}form .submit{width:100%;border:0;border-radius:25px;padding:14px}.note{font-size:11px;color:var(--muted);line-height:1.5}
 @media(max-width:760px){.hero{grid-template-columns:1fr;padding:35px 0}.hero img{height:240px}.perks{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.card img{height:150px}.head{align-items:start;flex-direction:column}.search{width:100%}}@media(max-width:420px){.brand{font-size:14px}.grid{gap:9px}.info{padding:10px}.card img{height:130px}}
+
+/* KHARAGBOZOR dark botanical minimal redesign */
+:root{--bg:#07140f;--ink:#f1f4ec;--green:#a6d66c;--muted:#a5b1a8;--line:#23382e}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif}
+header{background:rgba(7,20,15,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(190,220,190,.12)}
+.brand{color:#f4f6f0;letter-spacing:3px;font-size:15px}
+.brand i{background:var(--green);color:#102018;border-radius:12px;padding:10px 13px}
+.nav button{border-color:rgba(210,230,210,.2);color:#edf2e9;background:rgba(255,255,255,.025)}
+.nav .cart,.cta,.submit{background:var(--green);color:#102018;font-weight:700}
+.hero{position:relative;grid-template-columns:1fr .95fr;gap:46px;padding:62px 0 54px}
+.hero h1{color:#f5f7f0;font-weight:650;letter-spacing:-3.5px;line-height:1.02}
+.hero p{color:#b6c1b8;font-size:16px;max-width:480px}
+.hero img{height:420px;border-radius:24px;object-fit:cover;filter:saturate(.78) brightness(.78);box-shadow:0 24px 70px #0005}
+.eyebrow{color:var(--green);letter-spacing:2.5px}
+.cta{box-shadow:0 8px 24px #a6d66c20}
+.perks{gap:14px;margin-bottom:76px}
+.perk{background:#10231a;border:1px solid rgba(190,220,190,.1);color:#edf2e9;border-radius:16px;padding:20px}
+.perk span{color:#aab8ad}
+.head h2{color:#f4f6f0;font-size:34px;letter-spacing:-1px}
+.search{background:#10231a;color:#f1f4ec;border-color:#2a4034}
+.search::placeholder{color:#87988c}
+.filter{color:#dce6dc;border-color:#2c4437;background:transparent}
+.filter.active{background:var(--green);color:#102018;border-color:var(--green)}
+.card{background:#10231a;border:1px solid rgba(190,220,190,.1);border-radius:18px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:#a6d66c70}
+.card img{filter:saturate(.82);background:#14271e}
+.info h3{color:#f1f4ec}.info p{color:#a5b3a8}
+.buy{color:#eaf1e7}.buy button{background:#a6d66c;color:#102018}
+.about{background:linear-gradient(125deg,#13291e,#0d1d15);border:1px solid rgba(190,220,190,.12);color:#c2cec3;padding:38px}
+.about h2{color:#f3f6ef}
+.footer{border-color:#23382e;color:#819388}
+.shade{background:#000b}.drawer{background:#0b1b13;color:#f1f4ec}
+.drawerhead button{background:#1c3327;color:#f1f4ec}
+.lineitem{background:#13271c;color:#edf2e9}
+.qty button{background:#a6d66c;color:#102018}
+.total{border-color:#2a4034}
+form input,form textarea{background:#10231a;color:#f1f4ec;border-color:#2a4034}
+form input::placeholder,form textarea::placeholder{color:#84978a}
+.note{color:#9eafa2}
+@media(max-width:760px){.hero{padding:38px 0 34px;gap:24px}.hero img{height:260px}.head h2{font-size:29px}.about{padding:24px}}
+
 </style></head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
 <main class="wrap">
-<section class="hero"><div><div class="eyebrow" data-ru="ОНЛАЙН-МАГАЗИН · ДУШАНБЕ" data-tj="МАГОЗИНИ ОНЛАЙН · ДУШАНБЕ">ОНЛАЙН-МАГАЗИН · ДУШАНБЕ</div><h1 data-ru="Всё нужное.<br>В одном месте." data-tj="Ҳама чизи зарурӣ.<br>Дар як ҷо.">Всё нужное.<br>В одном месте.</h1><p data-ru="Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Душанбе." data-tj="Молҳоро онлайн интихоб кунед, фармоиш диҳед ва харидро дар Душанбе бо расонидани қулай гиред.">Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Душанбе.</p><a class="cta" href="#catalog" data-ru="Перейти к покупкам ↗" data-tj="Ба харид гузаред ↗">Перейти к покупкам ↗</a></div><img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1100&q=85" alt="Shopping"></section>
+<section class="hero"><div><div class="eyebrow" data-ru="ОНЛАЙН-МАГАЗИН · ДУШАНБЕ" data-tj="МАГОЗИНИ ОНЛАЙН · ДУШАНБЕ">ОНЛАЙН-МАГАЗИН · ДУШАНБЕ</div><h1 data-ru="Всё нужное.<br>В одном месте." data-tj="Ҳама чизи зарурӣ.<br>Дар як ҷо.">Всё нужное.<br>В одном месте.</h1><p data-ru="Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Душанбе." data-tj="Молҳоро онлайн интихоб кунед, фармоиш диҳед ва харидро дар Душанбе бо расонидани қулай гиред.">Выбирайте товары онлайн, оформляйте заказ за пару минут и получайте покупки с удобной доставкой по Душанбе.</p><a class="cta" href="#catalog" data-ru="Перейти к покупкам ↗" data-tj="Ба харид гузаред ↗">Перейти к покупкам ↗</a></div><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85" alt="Интерьер и товары для дома"></section>
 <section class="perks"><div class="perk"><b data-ru="Удобный заказ" data-tj="Фармоиши қулай">Удобный заказ</b><span data-ru="Покупки в несколько нажатий" data-tj="Харид бо чанд пахш">Покупки в несколько нажатий</span></div><div class="perk"><b data-ru="Доставка по Душанбе" data-tj="Расонидан дар Душанбе">Доставка по Душанбе</b><span data-ru="Согласуем удобное время" data-tj="Вақти мувофиқро мувофиқа мекунем">Согласуем удобное время</span></div><div class="perk"><b data-ru="Поддержка клиентов" data-tj="Дастгирии муштариён">Поддержка клиентов</b><span data-ru="Поможем с выбором и заказом" data-tj="Дар интихоб ва фармоиш кӯмак мекунем">Поможем с выбором и заказом</span></div></section>
 <section id="catalog"><div class="head"><div><div class="eyebrow">НАШ ВЫБОР</div><h2 data-ru="Популярные товары" data-tj="Молҳои машҳур">Популярные товары</h2></div><input id="search" class="search" placeholder="Поиск товаров..."></div><div class="filters" id="filters"></div><div class="grid" id="products"></div></section>
 <section class="about"><div class="eyebrow">KHARAGBOZOR</div><h2 data-ru="Простой способ найти то, что нужно." data-tj="Роҳи осони пайдо кардани чизи зарурӣ.">Простой способ найти то, что нужно.</h2><span data-ru="Мы создаём удобное место для покупок в Душанбе. Выбирайте товары онлайн, отправляйте заявку и уточняйте детали доставки с нашей командой." data-tj="Мо барои харид дар Душанбе ҷойи қулай месозем. Молро онлайн интихоб кунед ва ҷузъиёти расониданро бо дастаи мо мувофиқа кунед.">Мы создаём удобное место для покупок в Душанбе. Выбирайте товары онлайн, отправляйте заявку и уточняйте детали доставки с нашей командой.</span></section></main>
