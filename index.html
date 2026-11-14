@@ -364,6 +364,24 @@ form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;li
  #products.grid>.card .buy>button{width:42px;height:42px;min-width:42px}
 }
 
+
+/* COMPACT MOBILE CART BUTTON */
+@media(max-width:760px){
+ header .seller-actions{display:flex!important;justify-content:flex-start!important;align-items:center!important}
+ header #showcart.cart{
+  display:inline-flex!important;flex:0 0 auto!important;align-self:flex-end!important;
+  width:auto!important;min-width:0!important;max-width:max-content!important;
+  min-height:48px!important;height:48px!important;
+  padding:0 22px!important;margin:0 0 0 auto!important;
+  border-radius:999px!important;white-space:nowrap!important;
+  line-height:1!important;box-sizing:border-box!important
+ }
+ header #showcart #count{display:inline!important;margin-left:5px}
+}
+@media(max-width:390px){
+ header #showcart.cart{min-height:44px!important;height:44px!important;padding:0 18px!important}
+}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
