@@ -288,6 +288,34 @@ header{position:sticky;top:0;z-index:8;backdrop-filter:blur(16px);-webkit-backdr
  .category-tile:hover{transform:none}
 }
 
+
+/* MOBILE CART + CHECKOUT FIX */
+form#order{display:block;width:100%;min-width:0}
+form#order label{display:block;width:100%;min-width:0;margin:0 0 13px;line-height:1.5}
+form#order label input,
+form#order label textarea{display:block;width:100%;max-width:100%;min-width:0;margin:6px 0 0;box-sizing:border-box}
+form#order label textarea{min-height:88px;resize:vertical}
+form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;line-height:1.35}
+#shade{z-index:30;align-items:stretch}
+#shade.open{display:flex}
+#shade .drawer{position:relative;margin-left:auto;width:min(430px,100%);max-width:100%;height:100vh;height:100dvh;min-width:0;overflow-x:hidden;overflow-y:auto;box-sizing:border-box}
+#shade .drawerhead{position:sticky;top:0;z-index:2;background:inherit;padding-bottom:10px}
+#shade .lineitem{min-width:0;align-items:center;overflow-wrap:anywhere}
+#shade .lineitem>span:first-child{min-width:0;overflow-wrap:anywhere}
+#shade .qty{flex:0 0 auto;white-space:nowrap}
+#shade .total{gap:12px;align-items:center}
+#shade .total span:last-child{text-align:right;overflow-wrap:anywhere}
+@media(max-width:760px){
+ #shade{position:fixed;inset:0;width:100%;height:100%;padding:0;justify-content:stretch;align-items:stretch}
+ #shade .drawer{width:100%;max-width:none;height:100%;height:100dvh;margin:0;padding:calc(18px + env(safe-area-inset-top)) 18px calc(20px + env(safe-area-inset-bottom));border-radius:0}
+ #shade .drawerhead h2{font-size:23px}
+ #shade #order{padding-bottom:8px}
+ #shade #order label{font-size:13px;margin-bottom:12px}
+ #shade #order input,#shade #order textarea{font-size:16px;min-height:48px;padding:13px 14px}
+ #shade #order textarea{min-height:82px}
+ #shade .note{font-size:12px;line-height:1.55}
+}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
