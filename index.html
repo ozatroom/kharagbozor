@@ -340,6 +340,30 @@ form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;li
  #products.grid>.card .cardqty button{width:27px;height:27px;min-width:27px;flex-basis:27px}
 }
 
+
+/* MOBILE CATALOG FILTERS + CONSISTENT PRODUCT ACTIONS */
+@media(max-width:760px){
+ .filters{
+  display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;
+  max-width:100%;gap:10px;padding:4px 0 10px!important;margin:0 0 18px;
+  scrollbar-width:none!important;-ms-overflow-style:none!important;
+  -webkit-overflow-scrolling:touch;touch-action:pan-x;
+ }
+ .filters::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+ .filters>.filter{flex:0 0 auto!important;white-space:nowrap!important;max-width:none}
+ #products.grid>.card .buy{
+  display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+  justify-items:stretch;align-items:start;gap:8px;min-width:0
+ }
+ #products.grid>.card .buy>.price-main{grid-row:1;min-width:0;white-space:normal}
+ #products.grid>.card .buy>.cardqty,
+ #products.grid>.card .buy>button{
+  grid-row:2;justify-self:end;margin:0
+ }
+ #products.grid>.card .buy>.cardqty{width:max-content;max-width:100%;box-sizing:border-box}
+ #products.grid>.card .buy>button{width:42px;height:42px;min-width:42px}
+}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
