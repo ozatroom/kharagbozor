@@ -316,6 +316,30 @@ form#order .submit{display:block;width:100%;max-width:100%;white-space:normal;li
  #shade .note{font-size:12px;line-height:1.55}
 }
 
+
+/* MOBILE HEADER HEIGHT + PRODUCT CONTROL OVERFLOW FIX */
+@media(max-width:760px){
+ .nav{height:auto!important;min-height:0!important;padding-top:12px!important;padding-bottom:12px!important;align-items:stretch!important;gap:12px!important}
+ .nav>.brand{display:flex;align-items:center;min-height:52px;line-height:1.2}
+ .nav>.seller-actions{display:flex!important;width:100%;min-width:0;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:8px}
+ .nav>.seller-actions>button{flex:1 1 auto;min-width:0;max-width:100%;white-space:normal;line-height:1.25}
+ .nav>.seller-actions>#showcart{flex:0 0 auto!important;width:auto!important;min-width:128px;max-width:100%;margin-left:auto;padding:11px 18px}
+ #products.grid>.card{min-width:0;overflow:hidden}
+ #products.grid>.card>.info{min-width:0;overflow:hidden}
+ #products.grid>.card .buy{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;min-width:0}
+ #products.grid>.card .price-main{min-width:0;max-width:100%;overflow-wrap:anywhere;font-size:clamp(13px,3.5vw,18px)}
+ #products.grid>.card .cardqty{max-width:100%;min-width:0;gap:5px;padding:4px 5px;flex:0 1 auto}
+ #products.grid>.card .cardqty button{width:30px;height:30px;min-width:30px;flex:0 0 30px}
+ #products.grid>.card .cardqty span{min-width:12px}
+}
+@media(max-width:390px){
+ .nav>.seller-actions{gap:6px}
+ .nav>.seller-actions>#showcart{min-width:112px;padding:10px 13px}
+ #products.grid>.card .buy{gap:6px}
+ #products.grid>.card .cardqty{gap:3px;padding:3px}
+ #products.grid>.card .cardqty button{width:27px;height:27px;min-width:27px;flex-basis:27px}
+}
+
 </style><!-- storefront release: synchronized product-card quantity controls -->
 </head>
 <body><header><div class="wrap nav"><div class="brand"><i>K</i>KHARAGBOZOR</div><div class="seller-actions"><button class="seller-btn" id="sellerOpen">+ Добавить товар</button><button id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">☀️ Светлая</button><button id="language">РУ / TJ</button> <button class="cart" id="showcart">Корзина <span id="count">0</span></button></div></div></header>
